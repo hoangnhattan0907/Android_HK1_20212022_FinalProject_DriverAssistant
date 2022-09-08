@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_input">
+
+    <TextView
+        android:id="@+id/tvSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="item_drop_down_selected"
+        android:textSize="18dp"
+        android:layout_toStartOf="@id/arrow"
+        android:padding="10dp"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/drop_down"
+        android:paddingRight="10dp"/>
+</RelativeLayout>

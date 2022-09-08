@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.afinal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Final"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MailLogInActivity"
+            android:exported="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Part.PartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateKm"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn.GoogleLogInActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ui.login.GoogleLogInActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_google_log_in" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ui.login.LoginActivity" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="@string/title_activity_login" /> -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle.VehicleShow"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle.VehicleUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".Vehicle.VehicleDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Oil.OilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Gas.GasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn.SlashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/layout_item"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:outlineSpotShadowColor="#123456"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mode="same_level"
+    app:dragEdge ="right"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/tvChange"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_input_2"
+            android:backgroundTint="@color/title"
+            android:gravity="center"
+            android:text="Sửa" />
+        <TextView
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/tvDelete"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_input_2"
+            android:backgroundTint="@color/red"
+            android:gravity="center"
+            android:text="Xóa"/>
+        <TextView
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/tvShow"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/purple_200"
+            android:background="@drawable/custom_input_2"
+            android:gravity="center"
+            android:text="Chi tiết"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="0dp"
+        android:id="@+id/addVehicle">
+        <ImageView
+            android:id="@+id/ivPic"
+            android:src="@drawable/plus"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvNameVehicle"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#0080FF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/custom_input"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tvVehicleNumber"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:background="@drawable/custom_input"/>
+
+
+    </LinearLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Part.PartActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title"
+        android:background="@color/title">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivBack"
+            android:layout_gravity="center"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Linh kiện"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicle"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/searching"/>
+        <Spinner
+            android:id="@+id/spn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:gravity=""
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/km"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/gears"/>
+
+        <EditText
+            android:id="@+id/etNamePart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:hint="Tên linh kiện"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/value"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/number"/>
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Số lượng"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cost"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/dollar"/>
+        <EditText
+            android:id="@+id/etCost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Giá tiền"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/calendar"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:hint="Ngày thay"
+            android:textSize="18dp"
+            android:gravity=""
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/clock"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Giờ thay"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:textSize="18dp"
+            android:gravity=""
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hẹn lịch linh kiện cho lần kế tiếp"
+        android:textSize="18dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"/>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbDateNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Theo ngày"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/rbKmNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Theo Km" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp">
+        <TextView
+            android:id="@+id/tvDateNext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:background="@drawable/custom_input"
+            android:hint="Ngày cần thay"
+            android:textSize="18dp"
+            android:gravity=""
+            android:paddingLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/etKmNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_input"
+            android:enabled="false"
+            android:hint="Km cần thay"
+            android:textSize="18dp"
+            android:gravity=""
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Note"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/notes"/>
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Ghi chú"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_input"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/title"
+        android:text="Lưu" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  <group android:checkableBehavior="single">-->
+
+        <item
+            android:id="@+id/danhSachXe"
+            android:title="Danh sách xe"/>
+        <item
+            android:id="@+id/lichSuDoXang"
+            android:title="Lịch sử đổ xăng "/>
+
+        <item
+            android:id="@+id/lichSuThayNhot"
+            android:title="Lịch sử thay Nhớt "/>
+        <item
+            android:id="@+id/lichSuThayLinhKien"
+            android:title="Lịch sử thay linh Kiện"/>
+        <item
+            android:id="@+id/banDo"
+            android:title="Bản đồ"/>
+        <item
+            android:id="@+id/signOut"
+            android:title="Đăng xuất"/>
+<!--        <item-->
+<!--            android:title="Thông in ứng dụng"-->
+<!--            android:id="@+id/thongTin"/>-->
+
+</menu>
